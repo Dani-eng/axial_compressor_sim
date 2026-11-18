@@ -1,0 +1,10 @@
+{
+  "inlet_temperature_k": 288.15,
+  "inlet_pressure_pa": 101325.0,
+  "mass_flow_kg_s": 10.0,
+  "rotational_speed_rpm": 12000.0,
+  "target_pressure_ratio": 1.2,
+  "mean_radius_m": 0.25,
+  "axial_velocity_m_s": 150.0,
+  "stage_efficiency": 0.85
+}
