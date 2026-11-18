@@ -3,7 +3,8 @@ from pathlib import Path
 
 from compressor_sim.calculations import calculate_stage
 from compressor_sim.models import StageInputs
-
+from compressor_sim.plots import plot_velocity_triangles 
+from compressor_sim.plots import plot_stage_changes
 
 def main():
     project_root = Path(__file__).parent
@@ -24,7 +25,10 @@ def main():
     print(f"Inlet flow angle:           {results.inlet_flow_angle_deg:.1f} degrees")
     print(f"Outlet flow angle:          {results.outlet_flow_angle_deg:.1f} degrees")
     print("\nApproximate educational estimate—not validated design data.")
-
+    
+    plot_velocity_triangles(inputs, results)
+    
+    plot_stage_changes(inputs, results)
 
 if __name__ == "__main__":
     main()
